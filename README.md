@@ -50,12 +50,14 @@
 [:arrow_up:Использование](#Использование)
 
 **Ключи и параметры программы:**
-* -d, --d, -dir, --dir, /d 			- work directory
-* -w, --w, /w, -width, --width 		- width to form applaication
-* -h, --h, -height, --height 		- height fo form application
-* -s, --s, /s, -size, --size 		- Font-size to form application
-* -v, --v, /v, -version, --version 	- version
-* --help, -help, /?, ?, /h 			- help to program
+```
+-d, --d, -dir, --dir, /d 			- Задание рабочей директории
+-w, --w, /w, -width, --width 		- Размер окна программы по ширине
+-h, --h, -height, --height 			- Размер окна программы по высоте
+-s, --s, /s, -size, --size 			- Размер шрифта программы
+-v, --v, /v, -version, --version 	- Версия
+--help, -help, /?, ?, /h 			- Помощь
+```
 
 Программу можно использовать без параметров, тогда все параметры будут установлены по умолчанию, а путь к рабочей директории запрошен далее с помощью диалога выбора директории.
 По умолчанию устанавливаются следующие параметры: 
