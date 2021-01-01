@@ -23,14 +23,16 @@ A program written in QT c++ to view the tree of a given directory.
 Для того, чтобы независимо от наличия в вашей системе библиотек пользоваться программой, вопспользуйтесь специальной утилитой сборки библиотек - cqtdeployer.
 
 **Linux:**
-	```
-		cqtdeployer -bin myApp -qmake /media/D/Qt/6.0.0/gcc_64/bin/qmake -qmlDir ./
-	```
+
+```
+	cqtdeployer -bin myApp -qmake /media/D/Qt/6.0.0/gcc_64/bin/qmake -qmlDir ./
+```
 
 **Windows:**
-	```
-		cqtdeployer -bin myApp.exe -qmake /media/D/Qt/6.0.0/mingw810_64/bin/qmake.exe -qmlDir ./
-	```
+
+```
+	cqtdeployer -bin myApp.exe -qmake /media/D/Qt/6.0.0/mingw810_64/bin/qmake.exe -qmlDir ./
+```
 
 * cqtdeployer - это вызов утилиты. (до версии 1.4 в Windows использовалась команда %cqtdeployer%)
 * -bin - флаг для передачи путей исполняемых файлов приложения.
