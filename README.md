@@ -12,6 +12,7 @@ A program written in QT c++ to view the tree of a given directory.
 
 Для компиляции приложения воспользуйтесь следующими командами:
 	```$ qmake
+	   
 	   $ make
 	```
 
@@ -19,11 +20,12 @@ A program written in QT c++ to view the tree of a given directory.
 
 Для того, чтобы независимо от наличия в вашей системе библиотек переносить программу, вопспользуйтесь специальной утилитой сборки библиотек - cqtdeployer.
 
-**Linux**
+**Linux:**
 	```
 		cqtdeployer -bin myApp -qmake /media/D/Qt/6.0.0/gcc_64/bin/qmake -qmlDir ./
 	```
-**Windows**
+
+**Windows:**
 	```
 		cqtdeployer -bin myApp.exe -qmake /media/D/Qt/6.0.0/mingw810_64/bin/qmake.exe -qmlDir ./
 	```
