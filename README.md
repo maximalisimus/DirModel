@@ -13,8 +13,8 @@ A program written in QT c++ to view the tree of a given directory.
 Для компиляции приложения воспользуйтесь следующими командами:
 	
 	```$ qmake
-	   
-	   $ make
+	```
+	```$ make
 	```
 
 [:arrow_up:cqtdeployer](#cqtdeployer)
