@@ -3,7 +3,7 @@
 #include <QHBoxLayout>
 #include <QTreeView>
 #include <QDir>
-#include <QDirModel>
+#include <QFileSystemModel>
 #include <QString>
 #include <iostream>
 #include <QFileDialog>
@@ -97,18 +97,18 @@ int main(int argc, char *argv[])
             QRect rect = window->frameGeometry();
             QPoint point = rect.center();
             window->setGeometry(point.x()/2,point.y()/2,x,y);
-            QDirModel *model = new QDirModel();
-            model->setReadOnly(true);
-            model->setSorting(QDir::DirsFirst | QDir::IgnoreCase | QDir::Name);
+            QFileSystemModel *filemodel = new QFileSystemModel();
+            filemodel->setReadOnly(true);
+            filemodel->setFilter(QDir::AllEntries);
             QTreeView *tree = new QTreeView();
-            QModelIndex index = model->index(dir_str);
-            tree->setModel(model);
+            filemodel->setRootPath(dir_str);
+            QModelIndex index = filemodel->index(dir_str);
+            tree->setModel(filemodel);
             tree->expand(index);
             tree->scrollTo(index);
             tree->setCurrentIndex(index);
             tree->resizeColumnToContents(0);
-            //tree->setRowHidden();
-            tree->setRootIndex(model->index(dir_str));
+            tree->setRootIndex(filemodel->index(dir_str));
             layout->addWidget(tree);
             window->setLayout(layout);
             window->show();
