@@ -8,7 +8,7 @@
 #include <iostream>
 #include <QFileDialog>
 
-QString version = "1.0";
+QString version = "1.1";
 QString titles = "Tree dir";
 QString param;
 QString dir_str;
