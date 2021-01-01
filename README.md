@@ -22,13 +22,13 @@ A program written in QT c++ to view the tree of a given directory.
 
 Для того, чтобы независеть от наличия в вашей системе библиотек QT и беспрепятственно пользоваться программой, вопспользуйтесь специальной утилитой сборки библиотек - cqtdeployer.
 
-**Linux:**
+**Команды для Linux:**
 
 ```
 	cqtdeployer -bin myApp -qmake /media/D/Qt/6.0.0/gcc_64/bin/qmake -qmlDir ./
 ```
 
-**Windows:**
+**Команды для Windows:**
 
 ```
 	cqtdeployer -bin myApp.exe -qmake /media/D/Qt/6.0.0/mingw810_64/bin/qmake.exe -qmlDir ./
