@@ -75,27 +75,32 @@ int main(int argc, char *argv[])
             titles.append(" - ");
             titles.append(dir_str);
         }
-        QHBoxLayout *layout = new QHBoxLayout;
-        window->setWindowTitle(titles);
-        window->setFixedSize(x,y);
-        QRect rect = window->frameGeometry();
-        QPoint point = rect.center();
-        window->setGeometry(point.x()/2,point.y()/2,x,y);
-        QDirModel *model = new QDirModel();
-        model->setReadOnly(false);
-        model->setSorting(QDir::DirsFirst | QDir::IgnoreCase | QDir::Name);
-        QTreeView *tree = new QTreeView();
-        QModelIndex index = model->index(dir_str);
-        tree->setModel(model);
-        tree->expand(index);
-        tree->scrollTo(index);
-        tree->setCurrentIndex(index);
-        tree->resizeColumnToContents(0);
-        //tree->setRowHidden();
-        tree->setRootIndex(model->index(dir_str));
-        layout->addWidget(tree);
-        window->setLayout(layout);
-        window->show();
+        if (dir_str.size() == 0) {
+            std::cout<<"The parameters: " << dir_str.toStdString() << " - is not the directory!"<<std::endl;
+            return 1;
+        } else {
+            QHBoxLayout *layout = new QHBoxLayout;
+            window->setWindowTitle(titles);
+            window->setFixedSize(x,y);
+            QRect rect = window->frameGeometry();
+            QPoint point = rect.center();
+            window->setGeometry(point.x()/2,point.y()/2,x,y);
+            QDirModel *model = new QDirModel();
+            model->setReadOnly(true);
+            model->setSorting(QDir::DirsFirst | QDir::IgnoreCase | QDir::Name);
+            QTreeView *tree = new QTreeView();
+            QModelIndex index = model->index(dir_str);
+            tree->setModel(model);
+            tree->expand(index);
+            tree->scrollTo(index);
+            tree->setCurrentIndex(index);
+            tree->resizeColumnToContents(0);
+            //tree->setRowHidden();
+            tree->setRootIndex(model->index(dir_str));
+            layout->addWidget(tree);
+            window->setLayout(layout);
+            window->show();
+        }
     }
     return app.exec();
 }
