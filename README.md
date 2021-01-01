@@ -32,7 +32,7 @@
 **Команды для Linux:**
 
 ```
-	cqtdeployer -bin myApp -qmake /media/D/Qt/6.0.0/gcc_64/bin/qmake -qmlDir ./
+	cqtdeployer -bin myApp -qmake /usr/bin/qmake -qmlDir ./
 ```
 
 **Команды для Windows:**
