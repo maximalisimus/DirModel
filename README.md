@@ -2,7 +2,7 @@
 
 ****************************
 
-A program written in QT c++ to view the tree of a given directory.
+Программа для просмотра дерева заданной директории.
 
 <img src="https://raw.githubusercontent.com/maximalisimus/DirModel/main/image/dm-src-mage.png"  height="400">
 
