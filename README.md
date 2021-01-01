@@ -1,6 +1,10 @@
 # DirModel
 
+****************************
+
 A program written in QT c++ to view the tree of a given directory.
+
+<img src="https://user-images.githubusercontent.com/12465465/78639720-1aab3e80-78b7-11ea-9604-3dcdd7c78482.png"  height="400">
 
 ## Оглавление
 
@@ -13,6 +17,8 @@ A program written in QT c++ to view the tree of a given directory.
 Для компиляции приложения воспользуйтесь следующими командами:
 
 ```
+	$ cd src/DirModel
+	
 	$ qmake
 	
 	$ make
@@ -31,7 +37,7 @@ A program written in QT c++ to view the tree of a given directory.
 **Команды для Windows:**
 
 ```
-	cqtdeployer -bin myApp.exe -qmake /media/D/Qt/6.0.0/mingw810_64/bin/qmake.exe -qmlDir ./
+	cqtdeployer -bin myApp.exe -qmake C:\\Qt\Qt5.7.0\5.7\mingw53_32/bin\qmake.exe -qmlDir .
 ```
 
 * cqtdeployer - это вызов утилиты. (до версии 1.4 в Windows использовалась команда %cqtdeployer%)
