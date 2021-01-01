@@ -4,7 +4,7 @@
 
 Программа для просмотра дерева заданной директории.
 
-<img src="https://raw.githubusercontent.com/maximalisimus/DirModel/main/image/dm-src-mage.png"  height="400">
+<img src="https://raw.githubusercontent.com/maximalisimus/DirModel/main/image/DirModel-v.1.1-screenshot.png"  height="400">
 
 ## Оглавление
 
