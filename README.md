@@ -50,4 +50,4 @@
 
 Версия программы 1.0, написана на языке C++ с использованием элементов QT.
 
-Автор программы maximalisimus.
+Автор программы: [maximalisimus](https://github.com/maximalisimus).
