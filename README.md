@@ -11,6 +11,7 @@ A program written in QT c++ to view the tree of a given directory.
 [:arrow_up:Компиляция](#Компиляция)
 
 Для компиляции приложения воспользуйтесь следующими командами:
+	
 	```$ qmake
 	   
 	   $ make
