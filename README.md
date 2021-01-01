@@ -4,7 +4,7 @@
 
 A program written in QT c++ to view the tree of a given directory.
 
-<img src="https://user-images.githubusercontent.com/12465465/78639720-1aab3e80-78b7-11ea-9604-3dcdd7c78482.png"  height="400">
+<img src="https://raw.githubusercontent.com/maximalisimus/DirModel/main/image/dm-src-mage.png"  height="400">
 
 ## Оглавление
 
