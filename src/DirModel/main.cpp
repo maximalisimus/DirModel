@@ -17,6 +17,7 @@ int x = 640;
 int y = 480;
 QString str_x;
 QString str_y;
+QString str_font_size;
 
 int main(int argc, char *argv[])
 {
@@ -56,18 +57,29 @@ int main(int argc, char *argv[])
             exit(0);
         } else if (param == "--help" | param == "-help" | param == "/?" | param == "-?" | param == "?" | param == "/h") {
             std::cout<<"Dir tree. Parameters is:"<<std::endl;
-            std::cout<<"-d, --d, -dir, --dir, /d \t\t- directory"<<std::endl;
+            std::cout<<"-d, --d, -dir, --dir, /d \t\t- work directory"<<std::endl;
             std::cout<<"-w, --w, /w, -width, --width \t\t- width to form applaication"<<std::endl;
             std::cout<<"-h, --h, -height, --height \t\t- height fo form application"<<std::endl;
+             std::cout<<"-s, --s, /s, -size, --size \t\t- Font-size to form application"<<std::endl;
             std::cout<<"-v, --v, /v, -version, --version \t- version"<<std::endl;
             std::cout<<"--help, -help, /?, ?, /h \t\t- help to program"<<std::endl;
             std::cout<<"About for maximalisimus."<<std::endl;
             exit(0);
+        } else if (param == "-s" | param == "--s" | param == "/s" | param == "-size" | param == "--size") {
+            str_font_size = QApplication::arguments().at(i+1);
         }
     }
     if (not _global)
     {
         QWidget *window = new QWidget;
+        QFont font("sans-serif");
+        if (str_font_size.size() == 0)
+        {
+            font.setPointSize(12);
+        } else {
+            font.setPointSize(str_font_size.toInt());
+        }
+        window->setFont(font);
         if (dir_str.size() == 0) {
             dir_str = QFileDialog::getExistingDirectory(0, "Selecto to directory on tree", "");
             titles.append(" ");
