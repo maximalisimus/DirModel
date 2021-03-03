@@ -1,0 +1,10 @@
+# Auto detect text files
+* text=auto
+
+*.md text
+*.txt text
+*.pro text
+*.user text
+*.cpp text
+Makefile text
+
