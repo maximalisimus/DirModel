@@ -1,6 +1,7 @@
 # Auto detect text files
 * text=auto
 
+*.png binary
 *.md text
 *.txt text
 *.pro text
