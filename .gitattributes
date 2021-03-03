@@ -7,4 +7,4 @@
 *.user text
 *.cpp text
 Makefile text
-
+.gitignore eol=lf
