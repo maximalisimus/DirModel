@@ -6,5 +6,8 @@
 *.pro text
 *.user text
 *.cpp text
+*.pro.user text
+*.user text
 Makefile text
 .gitignore eol=lf
+
