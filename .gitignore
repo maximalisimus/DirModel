@@ -1,5 +1,9 @@
 
 !.gitattributes
 !.gitignore
-**/.qmake.stash
 .qmake.stash
+*.o
+/src/DirModel/DistributionKit/
+/src/DirModel/debug/
+/src/DirModel/release/
+/src/DirModel/build/
